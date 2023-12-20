@@ -18,7 +18,9 @@ const Homebutton = ({label}) => {
 
   return (
     <div id='Homebutton'>
-    <Link to='./store' style={HomebtnLink}>{label}</Link> 
+    <Link to='./store' style={HomebtnLink} onClick={() => {
+    window.scroll(0, 0);
+  }}>{label} </Link> 
     </div>
   )
 }
